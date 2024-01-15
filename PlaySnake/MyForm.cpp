@@ -30,6 +30,7 @@ int main(array<String^>^ args) {
 //
 System::Void PlaySnake::MyForm::btn_Settings_Click(System::Object^ sender, System::EventArgs^ e)
 {
+	groupBox_Settings->Enabled = true;
 	groupBox_Settings->Visible = true;
 }
 //
@@ -37,6 +38,7 @@ System::Void PlaySnake::MyForm::btn_Settings_Click(System::Object^ sender, Syste
 //
 System::Void PlaySnake::MyForm::btn_Accept_Click(System::Object^ sender, System::EventArgs^ e)
 {
+	groupBox_Settings->Enabled = false;
 	groupBox_Settings->Visible = false;
 }
 //
@@ -53,9 +55,6 @@ PlaySnake::MyForm::MyForm(void)
 {
 	
 	InitializeComponent();
-
-	/*if (DataBank::loadGame == false) btn_Continue->Visible = false;
-	else btn_Continue->Visible = true;*/
 
 }
 //

@@ -340,7 +340,6 @@ namespace PlaySnake {
 			this->radioButton_800->Name = L"radioButton_800";
 			this->radioButton_800->Size = System::Drawing::Size(227, 96);
 			this->radioButton_800->TabIndex = 1;
-			this->radioButton_800->TabStop = true;
 			this->radioButton_800->Text = L"800x800";
 			this->radioButton_800->UseVisualStyleBackColor = true;
 			// 
@@ -358,7 +357,6 @@ namespace PlaySnake {
 			this->radioButton_400->Name = L"radioButton_400";
 			this->radioButton_400->Size = System::Drawing::Size(218, 96);
 			this->radioButton_400->TabIndex = 0;
-			this->radioButton_400->TabStop = true;
 			this->radioButton_400->Text = L"400x400";
 			this->radioButton_400->UseVisualStyleBackColor = true;
 			// 
