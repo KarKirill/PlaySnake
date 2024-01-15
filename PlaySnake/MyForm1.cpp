@@ -1,7 +1,6 @@
 #include "MyForm1.h"
 #include "DataBank.h"
 
-
 Vector2 direction;
 Vector2 posFruit;
 Vector2 posRock;
