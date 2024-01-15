@@ -19,7 +19,6 @@ namespace PlaySnake {
 	{
 	public:
 		MyForm1(void);
-		//System::Windows::Forms::Form^ form;
 
 	protected:
 		/// <summary>
