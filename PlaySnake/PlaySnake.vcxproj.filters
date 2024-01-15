@@ -37,73 +37,73 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Desktop\snake_head_right.png">
+    <Image Include="resources\apple.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_down.png">
+    <Image Include="resources\apple2.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_up.png">
+    <Image Include="resources\place.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_left.png">
+    <Image Include="resources\place2.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\place.png">
+    <Image Include="resources\rock.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\snake_body_static.png">
+    <Image Include="resources\rock2.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\apple.png">
+    <Image Include="resources\snake_body_gold.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\rock.png">
+    <Image Include="resources\snake_body_static.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_2_down.png">
+    <Image Include="resources\snake_body_static_2.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\rock2.png">
+    <Image Include="resources\snake_dead.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_2_up.png">
+    <Image Include="resources\snake_gold_body.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_2_left.png">
+    <Image Include="resources\snake_gold_head_d.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_head_2_right.png">
+    <Image Include="resources\snake_gold_head_l.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\place2.png">
+    <Image Include="resources\snake_gold_head_r.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_body_static_2.png">
+    <Image Include="resources\snake_gold_head_u.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\apple2.png">
+    <Image Include="resources\snake_head_2_down.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_dead.png">
+    <Image Include="resources\snake_head_2_left.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_gold_body.png">
+    <Image Include="resources\snake_head_2_right.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_gold_head_d.png">
+    <Image Include="resources\snake_head_2_up.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_gold_head_u.png">
+    <Image Include="resources\snake_head_down.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_gold_head_l.png">
+    <Image Include="resources\snake_head_left.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_gold_head_r.png">
+    <Image Include="resources\snake_head_right.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="..\..\..\..\Desktop\snake_body_gold.png">
+    <Image Include="resources\snake_head_up.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>

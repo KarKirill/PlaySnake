@@ -106,11 +106,11 @@ void PlaySnake::MyForm1::Eating()
 		snake[DataBank::snakes.size()]->Height = step;
 
 		if (score >= total_score) 
-			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_body_gold.png");
+			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_body_gold.png");
 		else if (DataBank::PlayGame == true) 
-			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\snake_body_static.png");
+			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_body_static.png");
 		else 
-			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_body_static_2.png");
+			snake[DataBank::snakes.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_body_static_2.png");
 
 		this->Controls->Add(snake[DataBank::snakes.size()]);
 		DataBank::snakes.emplace_back(snake[DataBank::snakes.size() - 1]->Location.X + direction.X * step, snake[DataBank::snakes.size() - 1]->Location.Y + direction.Y * step);
@@ -118,8 +118,8 @@ void PlaySnake::MyForm1::Eating()
 		GenPositionFruit();
 
 		rock[DataBank::rocks.size()] = gcnew PictureBox();
-		if (DataBank::PlayGame == true)  rock[DataBank::rocks.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\rock.png");
-		else rock[DataBank::rocks.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\rock2.png");
+		if (DataBank::PlayGame == true)  rock[DataBank::rocks.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock.png");
+		else rock[DataBank::rocks.size()]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock2.png");
 		rock[DataBank::rocks.size()]->Width = step;
 		rock[DataBank::rocks.size()]->Height = step;
 
@@ -153,7 +153,7 @@ void PlaySnake::MyForm1::GameOver()
 {
 	play = true;
 	die = true;
-	snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_dead.png");
+	snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_dead.png");
 }
 
 void PlaySnake::MyForm1::NewGame()
@@ -187,12 +187,12 @@ void PlaySnake::MyForm1::NewGame()
 	if (DataBank::PlayGame == true)
 	{
 		this->BackColor = Color::FromArgb(51, 102, 51);
-		this->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\place.png");
+		this->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\place.png");
 	}
 	else 
 	{
 		this->BackColor = Color::FromArgb(34, 32, 52);
-		this->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\place2.png");
+		this->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\place2.png");
 	}
 	//
 	// Если Игра загружена, иначе
@@ -204,9 +204,9 @@ void PlaySnake::MyForm1::NewGame()
 		{
 			snake[i] = gcnew PictureBox();
 			if (DataBank::PlayGame == true)
-				snake[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\snake_body_static.png");
+				snake[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_body_static.png");
 			else
-				snake[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_body_static_2.png");
+				snake[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_body_static_2.png");
 			snake[i]->Width = step;
 			snake[i]->Height = step;
 			snake[i]->Location = Point(DataBank::snakes[i].X, DataBank::snakes[i].Y);
@@ -214,15 +214,15 @@ void PlaySnake::MyForm1::NewGame()
 		}
 
 		if (DataBank::PlayGame == true)
-			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_down.png");
+			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_down.png");
 		else
-			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_down.png");
+			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_down.png");
 
 		///
 
 		fruit = gcnew PictureBox();
-		if (DataBank::PlayGame == true) fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\apple.png");
-		else fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\apple2.png");
+		if (DataBank::PlayGame == true) fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\apple.png");
+		else fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\apple2.png");
 		fruit->Location = Point(DataBank::cordX_fruit, DataBank::cordY_fruit);
 		fruit->Width = step;
 		fruit->Height = step;
@@ -235,8 +235,8 @@ void PlaySnake::MyForm1::NewGame()
 		for (int i = 0; i < DataBank::rocks.size(); i++)
 		{
 			rock[i] = gcnew PictureBox();
-			if (DataBank::PlayGame == true)  rock[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\rock.png");
-			else rock[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\rock2.png");
+			if (DataBank::PlayGame == true)  rock[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock.png");
+			else rock[i]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock2.png");
 			rock[i]->Width = step;
 			rock[i]->Height = step;
 			rock[i]->Location = Point(DataBank::rocks[i].X, DataBank::rocks[i].Y);
@@ -268,9 +268,9 @@ void PlaySnake::MyForm1::NewGame()
 
 		if (DataBank::PlayGame == true)
 		{
-			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_down.png");
+			snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_down.png");
 		}
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_down.png");
+		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_down.png");
 
 
 		Random^ random = gcnew Random();
@@ -291,8 +291,8 @@ void PlaySnake::MyForm1::NewGame()
 		DataBank::snakes.emplace_back(XX,YY);
 
 		fruit = gcnew PictureBox();
-		if (DataBank::PlayGame == true) fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\apple.png");
-		else fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\apple2.png");
+		if (DataBank::PlayGame == true) fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\apple.png");
+		else fruit->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\apple2.png");
 		fruit->Width = step;
 		fruit->Height = step;
 		GenPositionFruit();
@@ -308,8 +308,8 @@ void PlaySnake::MyForm1::NewGame()
 
 		rock = gcnew array<PictureBox^>(400);
 		rock[0] = gcnew PictureBox();
-		if (DataBank::PlayGame == true)  rock[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Downloads\\rock.png");
-		else rock[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\rock2.png");
+		if (DataBank::PlayGame == true)  rock[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock.png");
+		else rock[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\rock2.png");
 		rock[0]->Width = step;
 		rock[0]->Height = step;
 		rock[0]->Location = Point(XXR, YYR);
@@ -470,30 +470,30 @@ System::Void PlaySnake::MyForm1::MyForm1_KeyDown(System::Object^ sender, System:
 		{
 			direction.X = 1;
 			direction.Y = 0;
-			if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_right.png");
-			else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_right.png");
+			if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_right.png");
+			else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_right.png");
 		}
 		return;
 	}
 	if (e->KeyCode.ToString() == "Left" || e->KeyCode.ToString() == "A") {
 		direction.X = -1;
 		direction.Y = 0;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_left.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_left.png");
+		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_left.png");
+		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_left.png");
 		return;
 	}
 	if (e->KeyCode.ToString() == "Up" || e->KeyCode.ToString() == "W") {
 		direction.X = 0;
 		direction.Y = -1;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_up.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_up.png");
+		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_up.png");
+		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_up.png");
 		return;
 	}
 	if (e->KeyCode.ToString() == "Down" || e->KeyCode.ToString() == "S") {
 		direction.X = 0;
 		direction.Y = 1;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_down.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\Desktop\\snake_head_2_down.png");
+		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_down.png");
+		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_down.png");
 		return;
 	}
 	if (e->KeyCode.ToString() == "Space") {
