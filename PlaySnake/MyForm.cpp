@@ -7,6 +7,7 @@ bool DataBank::PlayGame = true; //Цветовая палитра
 bool DataBank::teleport = true; //Модификация игры: Телепорты
 int DataBank::score = 0;
 bool DataBank::die = false;
+int DataBank::live = 2;
 int DataBank::total_score = 0;
 bool DataBank::loadGame = false;
 int DataBank::cordX_snake = 0;

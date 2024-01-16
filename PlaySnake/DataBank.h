@@ -21,6 +21,7 @@ public: static int areaS;
 		static bool die;
 		static bool teleport;
 		static int score;
+		static int live;
 		static int total_score;
 		static bool loadGame;
 		static int cordX_snake;

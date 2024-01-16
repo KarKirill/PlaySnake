@@ -262,6 +262,7 @@ void PlaySnake::MyForm1::NewGame()
 	}
 	else
 	{
+		DataBank::live = 2;
 		
 		snake = gcnew array<PictureBox^>(400);
 		snake[0] = gcnew PictureBox();
@@ -378,10 +379,20 @@ void PlaySnake::MyForm1::CheckBorder()
 
 void PlaySnake::MyForm1::CheckRock()
 {
-	for (int i = 0; i < DataBank::rocks.size(); i++)
-	{
-		if (rock[i]->Location == snake[0]->Location) { label_score->Text = "Удар об Камень!"; GameOver(); }
-	}
+
+		for (int i = 0; i < DataBank::rocks.size(); i++)
+		{
+			if (rock[i]->Location == snake[0]->Location) 
+			{
+				if (DataBank::live == 0)
+				{
+					label_score->Text = "Удар об Камень!"; GameOver();
+				}
+				else { DataBank::live--; label_score->Text = "Повезло!"; }
+			}
+		}
+	
+
 }
 
 void PlaySnake::MyForm1::PlaySound(String^ filename)
