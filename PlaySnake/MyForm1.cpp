@@ -466,7 +466,7 @@ System::Void PlaySnake::MyForm1::MyForm1_KeyDown(System::Object^ sender, System:
 {
 	if (e->KeyCode.ToString() == "Right" || e->KeyCode.ToString() == "D")
 	{
-		if (score < 3 && direction.X == -1 || direction.X != -1)
+		if (direction.X != -1)
 		{
 			direction.X = 1;
 			direction.Y = 0;
@@ -476,24 +476,33 @@ System::Void PlaySnake::MyForm1::MyForm1_KeyDown(System::Object^ sender, System:
 		return;
 	}
 	if (e->KeyCode.ToString() == "Left" || e->KeyCode.ToString() == "A") {
-		direction.X = -1;
-		direction.Y = 0;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_left.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_left.png");
+		if (direction.X != 1)
+		{
+			direction.X = -1;
+			direction.Y = 0;
+			if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_left.png");
+			else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_left.png");
+		}
 		return;
 	}
 	if (e->KeyCode.ToString() == "Up" || e->KeyCode.ToString() == "W") {
-		direction.X = 0;
-		direction.Y = -1;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_up.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_up.png");
+		if (direction.Y != 1)
+		{
+			direction.X = 0;
+			direction.Y = -1;
+			if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_up.png");
+			else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_up.png");
+		}
 		return;
 	}
 	if (e->KeyCode.ToString() == "Down" || e->KeyCode.ToString() == "S") {
-		direction.X = 0;
-		direction.Y = 1;
-		if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_down.png");
-		else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_down.png");
+		if (direction.Y != -1)
+		{
+			direction.X = 0;
+			direction.Y = 1;
+			if (DataBank::PlayGame == true) snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_down.png");
+			else snake[0]->BackgroundImage = Image::FromFile("C:\\Users\\USER\\source\\repos\\PlaySnake\\PlaySnake\\resources\\snake_head_2_down.png");
+		}
 		return;
 	}
 	if (e->KeyCode.ToString() == "Space") {
@@ -565,9 +574,7 @@ System::Void PlaySnake::MyForm1::btn_cont_Click(System::Object^ sender, System::
 System::Void PlaySnake::MyForm1::btn_ExitAndSave_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	SaveGame();
-	//this->Close();
 	MyForm1::Close();
-	//form->Visible = true;
 	Application::Restart();
 }
 
